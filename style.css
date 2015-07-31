@@ -660,14 +660,14 @@ body {
   height: 100%;
 }
 
-/* line 37, sass/style.scss */
+/* line 1, sass/partials/_header.scss */
 .contact {
   -webkit-box-flex: 0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
-/* line 43, sass/style.scss */
+/* line 7, sass/partials/_header.scss */
 .contact .contact-info {
   list-style: none;
   background: black;
@@ -683,7 +683,7 @@ body {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 43, sass/style.scss */
+  /* line 7, sass/partials/_header.scss */
   .contact .contact-info {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
@@ -691,14 +691,14 @@ body {
     flex-flow: row wrap;
   }
 }
-/* line 60, sass/style.scss */
+/* line 24, sass/partials/_header.scss */
 .contact .contact-info a {
   text-decoration: none;
   display: block;
   padding: 1rem;
   color: white;
 }
-/* line 66, sass/style.scss */
+/* line 30, sass/partials/_header.scss */
 .contact .contact-info a i.fa {
   background: #0099cc;
   padding: 0.75rem;
@@ -708,26 +708,32 @@ body {
   width: 15px;
 }
 
-/* line 84, sass/style.scss */
+/* line 48, sass/partials/_header.scss */
 header {
   -webkit-box-flex: 0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
 }
-/* line 90, sass/style.scss */
+/* line 54, sass/partials/_header.scss */
 header .header-container {
   max-width: 50rem;
   margin: 0 auto;
 }
 
-/* line 98, sass/style.scss */
+/* line 62, sass/partials/_header.scss */
 .main-content {
   max-width: 50rem;
   margin: 0 auto;
 }
 
-/* line 103, sass/style.scss */
+/* line 1, sass/partials/_content.scss */
+.main-content {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/* line 1, sass/partials/_footer.scss */
 footer {
   background: black;
   color: #fff;
@@ -739,7 +745,7 @@ footer {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 110, sass/style.scss */
+/* line 8, sass/partials/_footer.scss */
 footer .item {
   margin: 0 3rem;
 }

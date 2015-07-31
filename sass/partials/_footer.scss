@@ -1,0 +1,11 @@
+footer{
+	background:black;
+	color:#fff;
+	@include flexBox();
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	
+	.item{
+		margin:0 3rem;
+	}
+}
