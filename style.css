@@ -9,7 +9,8 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: McMullen Law Office, responsive
 Text Domain: mlo
-
+GitHub Theme URI: https://github.com/mcmullengreg/McMullenLawOffice
+GitHub Branch:    master
 */
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
@@ -655,8 +656,9 @@ a:hover {
   color: #5c9499;
 }
 
-/* line 30, sass/style.scss */
+/* line 31, sass/style.scss */
 body {
+  background: red;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -670,7 +672,7 @@ body {
   height: 100%;
 }
 
-/* line 40, sass/style.scss */
+/* line 42, sass/style.scss */
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -685,7 +687,7 @@ body {
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  /* line 40, sass/style.scss */
+  /* line 42, sass/style.scss */
   .container {
     -webkit-flex-direction: row;
     flex-direction: row;
