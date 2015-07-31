@@ -729,6 +729,8 @@ header .header-container {
 
 /* line 103, sass/style.scss */
 footer {
+  background: black;
+  color: #fff;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -737,9 +739,9 @@ footer {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-/* line 108, sass/style.scss */
+/* line 110, sass/style.scss */
 footer .item {
-  margin: 0 2rem;
+  margin: 0 3rem;
 }
 
 /*
