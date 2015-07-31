@@ -1,44 +1,61 @@
 .contact{
-	-webkit-box-flex: 0;
-	-webkit-flex: none;
-	-ms-flex: none;
-	flex: none;
+	@include flexBox();
+	-webkit-flex-flow: row wrap;
+	flex-flow:row wrap;
+	-webkit-justify-content:space-between;
+	justify-content: space-between;
 	background: black;
+	-webkit-align-items:center;
+	align-items: center;
+	.social{
+		-webkit-align-self:flex-start;
+		align-self: flex-start;
+		text-align: center;
+		margin:0 3rem;
+		a{
+			text-decoration: none;
+			display: inline-block;
+			color:white;
+			padding:1rem;
+			.fa{
+				padding:0; margin:0;
+				font-size: 1.6rem;
+				line-height: 0;
+				width: 15px;
+			}
+			&.facebook:hover{
+				color:white;
+				background: #3B5998;
+			}
+			&.twitter:hover{
+				color:white;
+				background:#55acee;
+			}
+		}
+	}
 	
 	.contact-info{
-		list-style: none;
-		margin:0;
-		@include flexBox();
-		-webkit-flex-flow: column wrap;
-		flex-flow:column wrap;
-		justify-content: space-around;
+		margin:0 3rem;
+		-webkit-align-self:flex-end;
+		align-self: flex-end;
 		text-align: center;
 		
-		@media(min-width:768px){
-			-webkit-justify-content:flex-end;
-			justify-content: flex-end;
-			-webkit-flex-flow: row wrap;
-			flex-flow: row wrap;
-			margin:0 3rem;
-			text-align: none;
-		}
-		li {
-			padding:0;
-			margin:0;
-			a{
-				text-decoration: none;
-				display: block;
-				padding:1rem;
+		a{
+			text-decoration: none;
+			display: inline-block;
+			padding:1rem;
+			color:white;
+			&:hover{
+				color:$brand-primary
+			}
+			i.fa{
+				background: $brand-primary;
+				padding:0.75rem;
+				border-radius: 100%;
+				margin-right:0.5rem;
+				height: 15px;
+				width: 15px;
 				color:white;
-			
-				i.fa{
-					background: $brand-primary;
-					padding:0.75rem;
-					border-radius: 100%;
-					margin-right:0.5rem;
-					height: 15px;
-					width: 15px;
-				}
 			}
 		}
 	}
@@ -51,11 +68,27 @@ header{
 	-webkit-flex: none;
 	-ms-flex: none;
 	flex: none;
+	background:#e8e8e8;
 	
 	.header-container{
 		max-width: 50rem;
 		margin: 0 auto;
-
+		@include flexBox();
+		
+		@media(min-width:768px){
+			-webkit-justify-content:flex-start;
+			justify-content: flex-start;
+			-webkit-flex-flow:row wrap;
+			flex-flow: row wrap;
+		}
+		.logo{
+			-webkit-flex-grow:2;
+			flex-grow: 2;
+		}
+		.tagline{
+			-webkit-align-self: flex-end;
+			align-self: flex-end;
+		}
 	}
 	
 }

@@ -17,20 +17,23 @@
     <body <?php body_class(); ?>>
         <!-- Add your site or application content here -->
         <section class="contact">
-	        <ul class="contact-info">
+	        <div class="social">
+		        <a href="#" class="facebook" title="Find <?php bloginfo('sitename');?> on Facebook"><i class="fa fa-facebook"></i></a>
+		        <a href="#" class="twitter" title="Find <?php bloginfo('sitename');?> on Twitter"><i class="fa fa-twitter"></i></a>
+	        </div>
+	        <div class="contact-info">
 				<!-- Theme Options customizeable -->
-				<li><a href="tel:(937) 985-2564"><i class="fa fa-phone"></i> (937) 985-2564</a>
-				</li>
-				<li><a href="#"><i class="fa fa-map-marker"></i> Beavercreek, OH</a></li>
-			</ul>
+				<a href="tel:(937) 985-2564"><i class="fa fa-phone"></i> (937) 985-2564</a>
+				<a href="#"><i class="fa fa-map-marker"></i> Beavercreek, OH</a>
+			</div>
         </section>
 		<header role="banner">
 			<div class="header-container">
 				<div class="logo">
-					<h1>McMullen Law Office</h1>
+					<h1><?php bloginfo('sitename');?></h1>
 				</div>
-				<div class="item">
-					<p>TESTNG</p>
+				<div class="tagline">
+					<p><?php bloginfo('description'); ?></p>
 				</div>
 		</header>
 		

@@ -1,11 +1,30 @@
 footer{
-	background:black;
+	background:#252525;
 	color:#fff;
 	@include flexBox();
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	
 	.item{
+		margin:0 3rem;
+	}
+}
+
+.colophon{
+	background:black;
+	color:darken(white, 15%);
+	@include flexBox();
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+
+	.copyright{
+		-webkit-align-self:flex-start;
+		align-self: flex-start;
+		margin:0 3rem;
+	}
+	.privacy{
+		-webkit-align-self:flex-end;
+		align-self: flex-end;
 		margin:0 3rem;
 	}
 }
