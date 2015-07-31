@@ -3,10 +3,10 @@
 	-webkit-flex: none;
 	-ms-flex: none;
 	flex: none;
+	background: black;
 	
 	.contact-info{
 		list-style: none;
-		background: black;
 		margin:0;
 		@include flexBox();
 		-webkit-flex-flow: column wrap;
@@ -19,25 +19,26 @@
 			justify-content: flex-end;
 			-webkit-flex-flow: row wrap;
 			flex-flow: row wrap;
+			margin:0 3rem;
+			text-align: none;
 		}
-		
-		a{
-			text-decoration: none;
-			display: block;
-			padding:1rem;
-			color:white;
+		li {
+			padding:0;
+			margin:0;
+			a{
+				text-decoration: none;
+				display: block;
+				padding:1rem;
+				color:white;
 			
-			i.fa{
-				background: $brand-primary;
-				padding:0.75rem;
-				border-radius: 100%;
-				margin-right:0.5rem;
-				height: 15px;
-				width: 15px;
-			}
-			
-			@media (min-width:768px){
-				
+				i.fa{
+					background: $brand-primary;
+					padding:0.75rem;
+					border-radius: 100%;
+					margin-right:0.5rem;
+					height: 15px;
+					width: 15px;
+				}
 			}
 		}
 	}
