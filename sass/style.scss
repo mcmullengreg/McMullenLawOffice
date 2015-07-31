@@ -16,6 +16,7 @@ $brand-secondary:		#575759;
 $brand-complement:		#af9079;
 
 @import 'partials/normalize';
+@import 'partials/typography';
 // @import 'partials/bootstrap';
 
 @mixin flexBox(){
@@ -36,6 +37,19 @@ body{
 	height: 100%;
 }
 
+.container{
+	@include flexBox();
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	@media (min-width:768px){
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	max-width: 72rem;
+	margin: 0 auto;
+}
 
 @import 'partials/header';
 @import 'partials/content';

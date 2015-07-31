@@ -1,5 +1,10 @@
 .contact{
-	@include flexBox();
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	background: black;
+/*
 	-webkit-flex-flow: row wrap;
 	flex-flow:row wrap;
 	-webkit-justify-content:space-between;
@@ -7,21 +12,31 @@
 	background: black;
 	-webkit-align-items:center;
 	align-items: center;
+*/
 	.social{
-		-webkit-align-self:flex-start;
-		align-self: flex-start;
+		-webkit-align-self:center;
+		align-self: center;
 		text-align: center;
-		margin:0 3rem;
+		border-top:solid 1px rgba(255,255,255,0.25);
+		-webkit-order:2;
+		order:2;
+		@media(min-width:768px){
+			-webkit-order:1;
+			order:1;
+			-webkit-align-self:flex-start;
+			align-self: flex-start;	
+			border-top: none;
+		}
 		a{
 			text-decoration: none;
 			display: inline-block;
-			color:white;
 			padding:1rem;
+			color:white;
 			.fa{
-				padding:0; margin:0;
-				font-size: 1.6rem;
-				line-height: 0;
+				padding:0.75rem;
+				height: 15px;
 				width: 15px;
+				color:white;
 			}
 			&.facebook:hover{
 				color:white;
@@ -35,10 +50,17 @@
 	}
 	
 	.contact-info{
-		margin:0 3rem;
-		-webkit-align-self:flex-end;
-		align-self: flex-end;
 		text-align: center;
+		-webkit-align-self:center;
+		align-self: center;
+		-webkit-order:1;
+		order:1;
+		@media(min-width:768px){
+			-webkit-order:2;
+			order: 2;
+			-webkit-align-self:flex-end;
+			align-self: flex-end;
+		}
 		
 		a{
 			text-decoration: none;
@@ -46,13 +68,13 @@
 			padding:1rem;
 			color:white;
 			&:hover{
-				color:$brand-primary
+				color:$brand-primary;
 			}
 			i.fa{
 				background: $brand-primary;
+				margin-right: 0.5rem;
 				padding:0.75rem;
 				border-radius: 100%;
-				margin-right:0.5rem;
 				height: 15px;
 				width: 15px;
 				color:white;
@@ -68,32 +90,80 @@ header{
 	-webkit-flex: none;
 	-ms-flex: none;
 	flex: none;
-	background:#e8e8e8;
-	
-	.header-container{
-		max-width: 50rem;
-		margin: 0 auto;
-		@include flexBox();
-		
-		@media(min-width:768px){
-			-webkit-justify-content:flex-start;
-			justify-content: flex-start;
-			-webkit-flex-flow:row wrap;
-			flex-flow: row wrap;
-		}
-		.logo{
-			-webkit-flex-grow:2;
-			flex-grow: 2;
-		}
-		.tagline{
-			-webkit-align-self: flex-end;
-			align-self: flex-end;
-		}
+	background: lighten($brand-secondary, 62%);
+	color:#333;
+	.logo{
+		-webkit-flex-grow:2;
+		flex-grow: 2;
 	}
-	
+	.tagline{
+		-webkit-align-self: flex-end;
+		align-self: flex-end;
+	}
 }
 
 .main-content{
 	max-width:50rem;
 	margin:0 auto;
 }
+
+
+nav{
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;	
+	background: lighten($brand-secondary, 62%);
+	@media (min-width:768px){
+		border-bottom: solid 5px $brand-primary;	
+	}
+	.navigation {
+		list-style: none;
+		margin: 0; 
+		padding:0;
+		@include flexBox();
+		-webkit-flex-flow: column wrap; // Column wrap for small devices
+		-webkit-justify-content:space-around;
+		justify-content:space-around;
+		width:100%;
+		
+		@media(min-width:768px){
+			-webkit-flex-flow:row wrap;
+			flex-flow:row wrap;
+			-webkit-justify-content:flex-start;
+			justify-content: flex-start;
+			padding:1rem 0;
+		}
+		.current-menu-item {
+			a{
+				background:darken($brand-primary, 5%);
+				color:#fff;
+			}
+		}
+		a{
+			color:#333;
+			display: block;
+			padding:1rem;
+			text-align:center;
+			@media(min-width:768px){
+				padding:0.5rem;
+				margin:0 1rem;	
+				&:first-child{
+					margin-left:0;
+				}
+			}
+			
+			&:hover{
+				background:lighten($brand-secondary, 58%);
+			}
+		}
+		
+		li:not(:last-child){
+			border-bottom:solid 1px white;
+			@media(min-width:768px){
+				border:none;
+			}
+		}
+	}
+}
+

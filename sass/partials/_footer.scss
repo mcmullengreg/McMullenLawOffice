@@ -1,13 +1,10 @@
 footer{
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
 	background:#252525;
 	color:#fff;
-	@include flexBox();
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	
-	.item{
-		margin:0 3rem;
-	}
 }
 
 .colophon{
