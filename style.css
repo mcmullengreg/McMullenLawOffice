@@ -658,7 +658,7 @@ a:hover {
 
 /* line 31, sass/style.scss */
 body {
-  background: red;
+  background: green;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
