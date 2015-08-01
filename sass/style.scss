@@ -14,45 +14,13 @@ $brand-primary:         #79aaaf;
 $brand-secondary:		#575759;
 $brand-complement:		#af9079;
 
+@import 'mixins/all';
 @import 'partials/normalize';
 @import 'partials/typography';
 // @import 'partials/bootstrap';
-
-@mixin flexBox(){
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-body{
-	background:green;
-	@include flexBox();
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	height: 100%;
-}
-
-.container{
-	@include flexBox();
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	@media (min-width:768px){
-		-webkit-flex-direction: row;
-		flex-direction: row;
-	}
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	max-width: 72rem;
-	margin: 0 auto;
-}
-
 @import 'partials/header';
 @import 'partials/content';
+@import 'partials/widgets';
 @import 'partials/footer';
 
 /*

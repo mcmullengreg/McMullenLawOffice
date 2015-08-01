@@ -1,15 +1,16 @@
+			</div><!-- container -->
 		</section><!-- main-content -->
 		
 		<footer>
 			<div class="container">
 				<div class="item">
-					<h4>Testing</h4>
+					<h3>Testing</h3>
 				</div>
 				<div class="item">
-					<h4>Testing</h4>
+					<h3>Testing</h3>
 				</div>
 				<div class="item">
-					<h4>Location</h4>
+					<h3>Location</h3>
 					<p><strong>McMullen Law Office, LLC</strong><br>
 						2661 Commons Boulevard<br>
 						Suite 315<br>
