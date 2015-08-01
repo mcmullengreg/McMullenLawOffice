@@ -922,6 +922,11 @@ body {
   background: #f6f6f6;
 }
 /* line 32, sass/partials/_content.scss */
+.main-content .container {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 36, sass/partials/_content.scss */
 .main-content .main {
   -webkit-order: 1;
   order: 1;
@@ -929,21 +934,21 @@ body {
   padding: 1rem 2rem;
 }
 @media (min-width: 768px) {
-  /* line 32, sass/partials/_content.scss */
+  /* line 36, sass/partials/_content.scss */
   .main-content .main {
     margin: 1.5rem 0;
     -webkit-flex: 2 75%;
     flex: 2 75%;
   }
 }
-/* line 43, sass/partials/_content.scss */
+/* line 47, sass/partials/_content.scss */
 .main-content .sidebar {
   -webkit-order: 2;
   order: 2;
   padding: 1rem 2rem;
 }
 @media (min-width: 768px) {
-  /* line 43, sass/partials/_content.scss */
+  /* line 47, sass/partials/_content.scss */
   .main-content .sidebar {
     margin: 1.5rem 0;
     -webkit-flex: 1 25%;
@@ -953,17 +958,24 @@ body {
 
 /* General Settings */
 /* line 3, sass/partials/_widgets.scss */
-.sidebar h5 {
+.widget h5 {
+  margin-top: 1rem;
   display: block;
-  font-size: 1.0rem;
+  font-size: 1.25rem;
+}
+/* line 8, sass/partials/_widgets.scss */
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* calendar widget */
-/* line 10, sass/partials/_widgets.scss */
+/* line 15, sass/partials/_widgets.scss */
 #wp-calendar {
   width: 100%;
 }
-/* line 12, sass/partials/_widgets.scss */
+/* line 17, sass/partials/_widgets.scss */
 #wp-calendar caption {
   text-align: right;
   color: #333;
@@ -971,51 +983,51 @@ body {
   margin-top: 0.714rem;
   margin-bottom: 1.071rem;
 }
-/* line 19, sass/partials/_widgets.scss */
+/* line 24, sass/partials/_widgets.scss */
 #wp-calendar thead {
   font-size: 0.714rem;
 }
-/* line 21, sass/partials/_widgets.scss */
+/* line 26, sass/partials/_widgets.scss */
 #wp-calendar thead th {
   padding-bottom: 0.714rem;
 }
-/* line 25, sass/partials/_widgets.scss */
+/* line 30, sass/partials/_widgets.scss */
 #wp-calendar tbody {
   color: #888;
 }
-/* line 27, sass/partials/_widgets.scss */
+/* line 32, sass/partials/_widgets.scss */
 #wp-calendar tbody td {
   background: white;
   border: 1px solid #f5f5f5;
   text-align: center;
   padding: 0.571rem;
 }
-/* line 33, sass/partials/_widgets.scss */
+/* line 38, sass/partials/_widgets.scss */
 #wp-calendar tbody .pad {
   background: transparent;
 }
-/* line 37, sass/partials/_widgets.scss */
+/* line 42, sass/partials/_widgets.scss */
 #wp-calendar tfoot {
   font-size: 0.857rem;
   text-transform: uppercase;
 }
-/* line 40, sass/partials/_widgets.scss */
+/* line 45, sass/partials/_widgets.scss */
 #wp-calendar tfoot #next {
   text-align: right;
 }
-/* line 43, sass/partials/_widgets.scss */
+/* line 48, sass/partials/_widgets.scss */
 #wp-calendar tfoot #prev {
   padding-top: 0.857rem;
 }
 
 /* The CSS */
-/* line 54, sass/partials/_widgets.scss */
+/* line 59, sass/partials/_widgets.scss */
 .widget_archive label {
   display: none;
 }
 
 /* line 1, sass/partials/_footer.scss */
-footer {
+body > footer {
   -webkit-box-flex: 0;
   -webkit-flex: none;
   -ms-flex: none;

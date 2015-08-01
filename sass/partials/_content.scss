@@ -29,6 +29,10 @@ body{
 	-ms-flex: none;
 	flex: none;
 	background: lighten($brand-secondary, 62%);
+	.container{
+		-webkit-align-items:flex-start;
+		align-items: flex-start;
+	}
 	.main{
 		-webkit-order:1;
 		order:1;

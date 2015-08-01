@@ -50,3 +50,5 @@ function mlo_wp_title( $title, $sep ) {
 	return $title;
 } // end mayer_wp_title
 add_filter( 'wp_title', 'mlo_wp_title', 10, 2 );
+
+add_theme_support( 'html5', array( 'search-form' ) );
