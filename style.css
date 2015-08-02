@@ -760,7 +760,7 @@ pre code {
   color: #af9079;
 }
 
-/* line 21, sass/style.scss */
+/* line 27, sass/style.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -794,7 +794,7 @@ pre code {
   -webkit-order: 2;
   order: 2;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 17, sass/partials/_header.scss */
   .contact .social {
     -webkit-order: 1;
@@ -835,7 +835,7 @@ pre code {
   -webkit-order: 1;
   order: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 52, sass/partials/_header.scss */
   .contact .contact-info {
     -webkit-order: 2;
@@ -893,7 +893,7 @@ nav {
   border-top: solid 5px #f2f2f2;
   border-bottom: solid 5px #f2f2f2;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 102, sass/partials/_header.scss */
   nav {
     border-top: none;
@@ -914,7 +914,7 @@ nav .navigation {
   justify-content: space-around;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 113, sass/partials/_header.scss */
   nav .navigation {
     -webkit-flex-flow: row wrap;
@@ -927,7 +927,7 @@ nav .navigation {
 nav .navigation .current-menu-item a {
   background: #cccccc;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 130, sass/partials/_header.scss */
   nav .navigation .current-menu-item a {
     background: transparent;
@@ -944,7 +944,7 @@ nav .navigation a {
   text-transform: uppercase;
   font-weight: bold;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 139, sass/partials/_header.scss */
   nav .navigation a {
     padding: 0.5rem;
@@ -963,7 +963,7 @@ nav .navigation a:hover {
 nav .navigation li:not(:last-child) {
   border-bottom: solid 1px #cccccc;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 160, sass/partials/_header.scss */
   nav .navigation li:not(:last-child) {
     border: none;
@@ -1000,7 +1000,7 @@ body {
   max-width: 72rem;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 12, sass/partials/_content.scss */
   .container {
     -webkit-flex-direction: row;
@@ -1028,7 +1028,7 @@ body {
   background: white;
   padding: 1rem 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 36, sass/partials/_content.scss */
   .main-content .main {
     margin: 1.5rem 0;
@@ -1036,7 +1036,7 @@ body {
     flex: 2 75%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 46, sass/partials/_content.scss */
   .main-content .main.landing-page {
     -webkit-flex: 2 65%;
@@ -1049,7 +1049,7 @@ body {
   order: 2;
   padding: 1rem 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 53, sass/partials/_content.scss */
   .main-content .sidebar {
     margin: 1.5rem 0;
@@ -1057,7 +1057,7 @@ body {
     flex: 1 25%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 62, sass/partials/_content.scss */
   .main-content .sidebar.landing-page {
     -webkit-flex: 1 30%;

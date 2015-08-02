@@ -14,6 +14,12 @@ $brand-primary:         #79aaaf;
 $brand-secondary:		#575759;
 $brand-complement:		#af9079;
 
+// MQ sizes
+$screen-xs: 480px;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+
 @import 'mixins/all';
 @import 'partials/normalize';
 @import 'partials/typography';
