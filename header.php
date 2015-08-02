@@ -32,7 +32,7 @@
 		<header role="banner">
 			<div class="container">
 				<div class="logo">
-					<h1><?php bloginfo('sitename');?></h1>
+					<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('sitename');?></a></h1>
 				</div>
 				<div class="tagline">
 					<p><?php bloginfo('description'); ?></p>
