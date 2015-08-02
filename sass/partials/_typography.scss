@@ -40,7 +40,9 @@ form{
 		width:100%;
 		background:#fff;
 		padding:0.5rem;
+		font-size: 1.143rem;
 		border:darken(white, 5%) solid 2px;
+		-webkit-appearance:none;
 		&:focus, &:active{
 			outline:darken(white, 15%) solid 2px;
 			border-color: transparent;
