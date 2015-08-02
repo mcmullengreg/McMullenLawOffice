@@ -910,6 +910,7 @@ nav .navigation {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-justify-content: space-around;
   justify-content: space-around;
   width: 100%;
@@ -919,23 +920,24 @@ nav .navigation {
   nav .navigation {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    flex-flow: row wrap;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
   }
 }
-/* line 130, sass/partials/_header.scss */
+/* line 132, sass/partials/_header.scss */
 nav .navigation .current-menu-item a {
   background: #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 130, sass/partials/_header.scss */
+  /* line 132, sass/partials/_header.scss */
   nav .navigation .current-menu-item a {
     background: transparent;
     color: #79aaaf;
     font-weight: bold;
   }
 }
-/* line 139, sass/partials/_header.scss */
+/* line 141, sass/partials/_header.scss */
 nav .navigation a {
   color: #666666;
   display: block;
@@ -945,26 +947,26 @@ nav .navigation a {
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  /* line 139, sass/partials/_header.scss */
+  /* line 141, sass/partials/_header.scss */
   nav .navigation a {
     padding: 0.5rem;
     margin: 0 1rem;
   }
-  /* line 149, sass/partials/_header.scss */
+  /* line 151, sass/partials/_header.scss */
   nav .navigation a:first-child {
     margin-left: 0;
   }
 }
-/* line 154, sass/partials/_header.scss */
+/* line 156, sass/partials/_header.scss */
 nav .navigation a:hover {
   color: #79aaaf;
 }
-/* line 160, sass/partials/_header.scss */
+/* line 162, sass/partials/_header.scss */
 nav .navigation li:not(:last-child) {
   border-bottom: solid 1px #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 160, sass/partials/_header.scss */
+  /* line 162, sass/partials/_header.scss */
   nav .navigation li:not(:last-child) {
     border: none;
   }
@@ -1027,38 +1029,60 @@ body {
   order: 1;
   background: white;
   padding: 1rem 2rem;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
 }
 @media (min-width: 992px) {
   /* line 36, sass/partials/_content.scss */
   .main-content .main {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
     margin: 1.5rem 0;
     -webkit-flex: 2 75%;
     flex: 2 75%;
   }
 }
+/* line 53, sass/partials/_content.scss */
+.main-content .main.landing-page {
+  margin: 1.5rem 0;
+  -webkit-order: 1;
+  order: 1;
+  background: white;
+  padding: 1rem 2rem;
+}
 @media (min-width: 992px) {
-  /* line 46, sass/partials/_content.scss */
+  /* line 53, sass/partials/_content.scss */
   .main-content .main.landing-page {
     -webkit-flex: 2 65%;
     flex: 2 65%;
   }
 }
-/* line 53, sass/partials/_content.scss */
+/* line 65, sass/partials/_content.scss */
 .main-content .sidebar {
   -webkit-order: 2;
   order: 2;
   padding: 1rem 2rem;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 53, sass/partials/_content.scss */
+  /* line 65, sass/partials/_content.scss */
   .main-content .sidebar {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
     margin: 1.5rem 0;
     -webkit-flex: 1 25%;
     flex: 1 25%;
   }
 }
 @media (min-width: 992px) {
-  /* line 62, sass/partials/_content.scss */
+  /* line 81, sass/partials/_content.scss */
   .main-content .sidebar.landing-page {
     -webkit-flex: 1 30%;
     flex: 1 30%;
