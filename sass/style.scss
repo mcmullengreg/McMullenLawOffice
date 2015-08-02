@@ -18,6 +18,11 @@ $brand-complement:		#af9079;
 @import 'partials/normalize';
 @import 'partials/typography';
 // @import 'partials/bootstrap';
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 @import 'partials/header';
 @import 'partials/content';
 @import 'partials/widgets';

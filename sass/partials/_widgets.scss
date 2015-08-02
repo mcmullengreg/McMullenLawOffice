@@ -61,3 +61,39 @@
 	}
 }
 
+.widget{
+	display: block;
+	form{
+		display: block;
+		
+		label{
+			display: none;
+		}
+		input[type=search], input[type=phone],input[type=email], input[type=text], textarea{
+			border-radius: 6px;
+			display: block;
+			margin:0.5rem 0;
+			width:100%;
+			background:#fff;
+			padding:0.5rem;
+			border:darken(white, 5%) solid 2px;
+			&:focus{
+				outline:darken(white, 15%) solid 2px;
+				border-color: transparent
+			}
+		}
+		textarea{
+			height:5rem;
+			resize: horizontal;
+		}
+		
+		&.search-form{
+			input[type=button], input[type=submit]{
+				display: none;
+			}
+		}
+	}
+	.disclaimer{
+		font-size:0.875rem;
+	}
+}

@@ -5,3 +5,10 @@
 	display: -webkit-flex;
 	display: flex;
 }
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}

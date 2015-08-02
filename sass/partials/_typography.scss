@@ -22,3 +22,55 @@ a{
 		color:darken($brand-primary, 10%);
 	}
 }
+
+.text-primary{
+	color:$brand-primary;
+}
+
+form{
+	input[type=submit], input[type=button]{
+		font-weight: 700;
+		font-size: 1.25rem;
+		background: $brand-complement;
+		border:none;
+		border-bottom: 4px solid darken($brand-complement, 25%);
+		display: block;
+		margin:0.5rem 0;
+		width:100%;
+		border-radius: 6px;
+		padding:0.5rem;
+		color:#fff;
+		text-align: center;
+		@include transition(all 250ms ease);
+		&:hover{
+			background: darken($brand-complement, 15%);
+		}
+		&:active{
+			position: relative;
+			top:4px;
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+blockquote{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #a5a4a4;
+    font-style: italic;
+    margin: 1rem;
+    padding: 1rem;    
+    text-align: center; 
+	footer{
+		
+	}
+}
+
+pre{
+	background: darken(white, 2.5%);
+	border: solid 1px darken(white, 10%);
+	white-space: pre-wrap;
+	code{
+		color:$brand-complement;
+	}
+}
