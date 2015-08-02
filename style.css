@@ -873,17 +873,45 @@ header {
 }
 /* line 91, sass/partials/_header.scss */
 header .logo {
-  -webkit-flex-grow: 2;
-  flex-grow: 2;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-self: center;
+  align-self: center;
 }
-/* line 95, sass/partials/_header.scss */
+@media (min-width: 992px) {
+  /* line 91, sass/partials/_header.scss */
+  header .logo {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    -webkit-flex-grow: 2;
+    flex-grow: 2;
+  }
+}
+/* line 107, sass/partials/_header.scss */
 header .tagline {
-  -webkit-align-self: flex-end;
-  align-self: flex-end;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-self: center;
+  align-self: center;
   padding: 0 1rem;
 }
+@media (min-width: 992px) {
+  /* line 107, sass/partials/_header.scss */
+  header .tagline {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+  }
+}
 
-/* line 102, sass/partials/_header.scss */
+/* line 124, sass/partials/_header.scss */
 nav {
   -webkit-box-flex: 0;
   -webkit-flex: none;
@@ -894,12 +922,12 @@ nav {
   border-bottom: solid 5px #f2f2f2;
 }
 @media (min-width: 992px) {
-  /* line 102, sass/partials/_header.scss */
+  /* line 124, sass/partials/_header.scss */
   nav {
     border-top: none;
   }
 }
-/* line 113, sass/partials/_header.scss */
+/* line 135, sass/partials/_header.scss */
 nav .navigation {
   list-style: none;
   margin: 0;
@@ -916,7 +944,7 @@ nav .navigation {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 113, sass/partials/_header.scss */
+  /* line 135, sass/partials/_header.scss */
   nav .navigation {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -925,19 +953,19 @@ nav .navigation {
     justify-content: flex-start;
   }
 }
-/* line 132, sass/partials/_header.scss */
+/* line 154, sass/partials/_header.scss */
 nav .navigation .current-menu-item a {
   background: #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 132, sass/partials/_header.scss */
+  /* line 154, sass/partials/_header.scss */
   nav .navigation .current-menu-item a {
     background: transparent;
     color: #79aaaf;
     font-weight: bold;
   }
 }
-/* line 141, sass/partials/_header.scss */
+/* line 163, sass/partials/_header.scss */
 nav .navigation a {
   color: #666666;
   display: block;
@@ -947,26 +975,26 @@ nav .navigation a {
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  /* line 141, sass/partials/_header.scss */
+  /* line 163, sass/partials/_header.scss */
   nav .navigation a {
     padding: 0.5rem;
     margin: 0 1rem;
   }
-  /* line 151, sass/partials/_header.scss */
+  /* line 173, sass/partials/_header.scss */
   nav .navigation a:first-child {
     margin-left: 0;
   }
 }
-/* line 156, sass/partials/_header.scss */
+/* line 178, sass/partials/_header.scss */
 nav .navigation a:hover {
   color: #79aaaf;
 }
-/* line 162, sass/partials/_header.scss */
+/* line 184, sass/partials/_header.scss */
 nav .navigation li:not(:last-child) {
   border-bottom: solid 1px #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 162, sass/partials/_header.scss */
+  /* line 184, sass/partials/_header.scss */
   nav .navigation li:not(:last-child) {
     border: none;
   }

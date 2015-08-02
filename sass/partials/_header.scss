@@ -89,13 +89,35 @@ header{
 	background:white;
 	color:#333;
 	.logo{
-		-webkit-flex-grow:2;
-		flex-grow: 2;
+		-webkit-flex-flow: column wrap; // Column wrap for small devices
+		flex-flow: column wrap;
+		-webkit-justify-content:space-around;
+		justify-content:space-around;
+		-webkit-align-self: center;
+		align-self: center;
+		@media (min-width: $screen-medium){
+			-webkit-flex-flow: row wrap; // Column wrap for small devices
+			flex-flow: row wrap;	
+			-webkit-align-self: flex-start;
+			align-self: flex-start;
+			-webkit-flex-grow:2;
+			flex-grow: 2;	
+		}
 	}
 	.tagline{
-		-webkit-align-self: flex-end;
-		align-self: flex-end;
+		-webkit-flex-flow: column wrap; // Column wrap for small devices
+		flex-flow: column wrap;
+		-webkit-justify-content:space-around;
+		justify-content:space-around;
+		-webkit-align-self: center;
+		align-self: center;
 		padding:0 1rem;
+		@media(min-width:$screen-medium){
+			-webkit-flex-flow: row wrap; // Column wrap for small devices
+			flex-flow: row wrap;	
+			-webkit-align-self: flex-end;
+			align-self: flex-end;
+		}
 	}
 }
 
