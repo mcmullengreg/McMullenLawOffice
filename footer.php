@@ -20,11 +20,13 @@
 		</footer>
 		
 		<section class="colophon">
-			<div class="copyright">
-				<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('sitename'); ?></p>
-			</div>
-			<div class="privacy">
-				<p>This site is an advertisement. &bull; <a href="#">Privacy Policy</a> &bull; <a href="#">Disclaimer</a></p>
+			<div class="container">
+				<div class="copyright">
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('sitename'); ?></p>
+				</div>
+				<div class="privacy">
+					<p>This site is an advertisement. &bull; <a href="#">Privacy Policy</a> &bull; <a href="#">Disclaimer</a></p>
+				</div>
 			</div>
 		</section>
 		<!-- this will be imported in wp_footer() --->

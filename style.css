@@ -1210,31 +1210,68 @@ body > footer {
   flex: none;
   background: #252525;
   color: #fff;
+  padding: 1rem 2rem;
+}
+/* line 9, sass/partials/_footer.scss */
+body > footer .item {
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+@media (min-width: 992px) {
+  /* line 9, sass/partials/_footer.scss */
+  body > footer .item {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
 }
 
-/* line 10, sass/partials/_footer.scss */
+/* line 22, sass/partials/_footer.scss */
 .colophon {
   background: black;
   color: #d9d9d9;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  padding: 1rem 2rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
-/* line 17, sass/partials/_footer.scss */
+/* line 30, sass/partials/_footer.scss */
 .colophon .copyright {
-  -webkit-align-self: flex-start;
-  align-self: flex-start;
-  margin: 0 3rem;
+  -webkit-align-self: center;
+  align-self: center;
+  text-align: center;
+  border-top: solid 1px rgba(255, 255, 255, 0.25);
+  -webkit-order: 2;
+  order: 2;
 }
-/* line 22, sass/partials/_footer.scss */
+@media (min-width: 992px) {
+  /* line 30, sass/partials/_footer.scss */
+  .colophon .copyright {
+    -webkit-order: 1;
+    order: 1;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    border-top: none;
+  }
+}
+/* line 45, sass/partials/_footer.scss */
 .colophon .privacy {
-  -webkit-align-self: flex-end;
-  align-self: flex-end;
-  margin: 0 3rem;
+  text-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  -webkit-order: 1;
+  order: 1;
+}
+@media (min-width: 992px) {
+  /* line 45, sass/partials/_footer.scss */
+  .colophon .privacy {
+    -webkit-order: 2;
+    order: 2;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+  }
 }
 
 /*
