@@ -672,7 +672,43 @@ a:hover {
   color: #79aaaf;
 }
 
-/* line 31, sass/partials/_typography.scss */
+/* line 30, sass/partials/_typography.scss */
+form {
+  display: block;
+}
+/* line 33, sass/partials/_typography.scss */
+form label {
+  display: none;
+}
+/* line 36, sass/partials/_typography.scss */
+form input[type=search], form input[type=phone], form input[type=email], form input[type=text], form textarea {
+  border-radius: 6px;
+  display: block;
+  margin: 0.5rem 0;
+  width: 100%;
+  background: #fff;
+  padding: 0.5rem;
+  border: #f2f2f2 solid 2px;
+}
+/* line 44, sass/partials/_typography.scss */
+form input[type=search]:focus, form input[type=search]:active, form input[type=phone]:focus, form input[type=phone]:active, form input[type=email]:focus, form input[type=email]:active, form input[type=text]:focus, form input[type=text]:active, form textarea:focus, form textarea:active {
+  outline: #d9d9d9 solid 2px;
+  border-color: transparent;
+}
+/* line 49, sass/partials/_typography.scss */
+form textarea {
+  height: 5rem;
+  resize: horizontal;
+}
+/* line 55, sass/partials/_typography.scss */
+form.search-form input[type=button], form.search-form input[type=submit] {
+  display: none;
+}
+/* line 59, sass/partials/_typography.scss */
+form .disclaimer {
+  font-size: 0.875rem;
+}
+/* line 63, sass/partials/_typography.scss */
 form input[type=submit], form input[type=button] {
   font-weight: 700;
   font-size: 1.25rem;
@@ -691,18 +727,18 @@ form input[type=submit], form input[type=button] {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
 }
-/* line 45, sass/partials/_typography.scss */
+/* line 77, sass/partials/_typography.scss */
 form input[type=submit]:hover, form input[type=button]:hover {
   background: #896a52;
 }
-/* line 48, sass/partials/_typography.scss */
+/* line 80, sass/partials/_typography.scss */
 form input[type=submit]:active, form input[type=button]:active {
   position: relative;
   top: 4px;
   border-bottom-color: transparent;
 }
 
-/* line 56, sass/partials/_typography.scss */
+/* line 88, sass/partials/_typography.scss */
 blockquote {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -713,13 +749,13 @@ blockquote {
   text-align: center;
 }
 
-/* line 69, sass/partials/_typography.scss */
+/* line 101, sass/partials/_typography.scss */
 pre {
   background: #f9f9f9;
   border: solid 1px #e6e6e6;
   white-space: pre-wrap;
 }
-/* line 73, sass/partials/_typography.scss */
+/* line 105, sass/partials/_typography.scss */
 pre code {
   color: #af9079;
 }
@@ -1103,39 +1139,11 @@ body {
 .widget {
   display: block;
 }
-/* line 66, sass/partials/_widgets.scss */
-.widget form {
-  display: block;
-}
-/* line 69, sass/partials/_widgets.scss */
-.widget form label {
-  display: none;
-}
-/* line 72, sass/partials/_widgets.scss */
-.widget form input[type=search], .widget form input[type=phone], .widget form input[type=email], .widget form input[type=text], .widget form textarea {
-  border-radius: 6px;
-  display: block;
-  margin: 0.5rem 0;
-  width: 100%;
-  background: #fff;
-  padding: 0.5rem;
-  border: #f2f2f2 solid 2px;
-}
-/* line 80, sass/partials/_widgets.scss */
-.widget form input[type=search]:focus, .widget form input[type=phone]:focus, .widget form input[type=email]:focus, .widget form input[type=text]:focus, .widget form textarea:focus {
-  outline: #d9d9d9 solid 2px;
-  border-color: transparent;
-}
-/* line 85, sass/partials/_widgets.scss */
-.widget form textarea {
-  height: 5rem;
-  resize: horizontal;
-}
-/* line 91, sass/partials/_widgets.scss */
+/* line 68, sass/partials/_widgets.scss */
 .widget form.search-form input[type=button], .widget form.search-form input[type=submit] {
   display: none;
 }
-/* line 96, sass/partials/_widgets.scss */
+/* line 73, sass/partials/_widgets.scss */
 .widget .disclaimer {
   font-size: 0.875rem;
 }
