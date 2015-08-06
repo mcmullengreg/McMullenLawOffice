@@ -1,17 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
+<html <?php language_attributes(); ?> class="no-js">
+    <head>    
+	    <meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-<!--         <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-		<!-- after everything, WP_head, yo --->
 		<?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
