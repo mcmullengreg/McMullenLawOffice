@@ -61,6 +61,39 @@ body{
 				flex:2 65%;
 			}
 		}
+		
+		.post{
+			.entry-title{
+				padding-top:0.5rem;
+				font-size: 2.0rem;
+			}
+			&:not(:first-child) .entry-title{
+				border-top: solid 5px lighten($brand-secondary, 58%);
+			}
+		}
+		
+		.author-info{
+			border-top: solid 5px lighten($brand-secondary, 58%);
+			
+			.author-heading{
+				font-size:1.35rem;
+			}
+			.author-avatar img{
+				float:left;
+				border:solid 1px lighten($brand-secondary, 58%);
+				background:lighten($brand-secondary, 62%);
+				padding:0.125rem;
+				border-radius: 100%;
+				margin: 0 0.75rem 1rem;
+			}
+			&:after{
+				content:' ';
+				height:1px;
+				clear:both;
+				display: block;
+			}
+		}	
+	
 	}
 	.sidebar{
 		-webkit-order:2;

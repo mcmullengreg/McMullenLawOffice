@@ -4,3 +4,4 @@
 	include_once 'inc/head_cleanup.php';
 	include_once 'inc/custom_nav.php';
 	include_once 'inc/register_sidebars.php';
+	include_once 'inc/carousel.php';
