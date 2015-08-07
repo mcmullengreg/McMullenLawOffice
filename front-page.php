@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 	
 	<main class="main">
-		
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -11,7 +10,7 @@
 			<?php endif; ?>
 
 			<?php
-			// Start the loop.
+			// Start the loop
 			while ( have_posts() ) : the_post();
 
 				/*
