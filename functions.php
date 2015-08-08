@@ -5,3 +5,4 @@
 	include_once 'inc/custom_nav.php';
 	include_once 'inc/register_sidebars.php';
 	include_once 'inc/carousel.php';
+	include_once 'inc/theme_support.php';
