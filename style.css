@@ -1091,12 +1091,12 @@ body {
   }
 }
 /* line 66, sass/partials/_content.scss */
-.main-content .main .post .entry-title {
+.main-content .main .post .entry-title, .main-content .main .page .entry-title {
   padding-top: 0.5rem;
   font-size: 2.0rem;
 }
 /* line 70, sass/partials/_content.scss */
-.main-content .main .post:not(:first-child) .entry-title {
+.main-content .main .post:not(:first-child) .entry-title, .main-content .main .page:not(:first-child) .entry-title {
   border-top: solid 5px #ececec;
 }
 /* line 75, sass/partials/_content.scss */
