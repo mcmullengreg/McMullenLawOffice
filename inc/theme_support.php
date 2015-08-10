@@ -1,11 +1,26 @@
-<?php
-	// Force search of pages too
-	function search_filter( $query ){
-		if ( $query->is_search ) {
-			$query->set( 
-				'post_type'	, array('post', 'page')
-			);
-		}
-		return query;
-	}
-	add_filter('pre_get_posts', 'search_filter');	
+<?php 
+// exclude any content from search results that use specific page templates
+function exclude_page_templates_from_search($query) {
+    global $wp_the_query;
+    if ( ($wp_the_query === $query) && (is_search()) && ( ! is_admin()) ) {
+        $meta_query = 
+            array(
+// set OR, default is AND
+                'relation' => 'OR',
+// remove pages with foo.php template from results
+                array(
+                    'key' => '_wp_page_template',
+                    'value' => 'page-landing.php',
+                    'compare' => 'NOT LIKE'
+                ),
+// show all entries that do not have a key '_wp_page_template'
+                array(
+                    'key' => '_wp_page_template',
+                    'value' => 'page-thanks.php',
+                    'compare' => 'NOT EXISTS'
+                )
+            );
+        $query->set('meta_query', $meta_query);
+    }
+}
+add_filter('pre_get_posts','exclude_page_templates_from_search');
