@@ -63,8 +63,8 @@ form{
 	}
 
 	input[type=submit], input[type=button]{
-		font-weight: 700;
-		font-size: 1.25rem;
+		font-weight: 400;
+		font-size: 1.15rem;
 		background: $brand-complement;
 		border:none;
 		border-bottom: 4px solid darken($brand-complement, 25%);
@@ -75,7 +75,7 @@ form{
 		padding:0.5rem;
 		color:#fff;
 		text-align: center;
-		@include transition(all 250ms ease);
+		@include transition(background 250ms ease);
 		&:hover{
 			background: darken($brand-complement, 15%);
 		}
