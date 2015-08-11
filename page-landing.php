@@ -3,7 +3,7 @@
 Template Name: Landing Page Template
 */
 
-get_header('landing'); ?>
+get_header(); ?>
 	
 	<main class="main">
 		<?php

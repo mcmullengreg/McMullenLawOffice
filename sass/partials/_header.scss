@@ -5,15 +5,7 @@
 	flex: none;
 	background: black;
 	border-bottom: solid 5px lighten(#333, 75%);
-/*
-	-webkit-flex-flow: row wrap;
-	flex-flow:row wrap;
-	-webkit-justify-content:space-between;
-	justify-content: space-between;
-	background: black;
-	-webkit-align-items:center;
-	align-items: center;
-*/
+	
 	.social{
 		-webkit-align-self:center;
 		align-self: center;
@@ -191,3 +183,29 @@ nav{
 	}
 }
 
+.landing-page{
+	header{
+		.logo{
+			-webkit-flex-flow: column wrap; // Column wrap for small devices
+			flex-flow: column wrap;
+			-webkit-justify-content:space-around;
+			justify-content:space-around;
+			-webkit-align-self: center;
+			align-self: center;
+			text-align: center;
+		}
+	}
+	.contact{
+		.contact-info{
+			@media(min-width:$screen-medium){
+				-webkit-flex-flow: column wrap; // Column wrap for small devices
+				flex-flow: column wrap;
+				-webkit-justify-content:space-around;
+				justify-content:space-around;
+				-webkit-align-self: center;
+				align-self: center;
+				text-align: center;
+			}
+		}	
+	}
+}

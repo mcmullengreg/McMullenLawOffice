@@ -6,3 +6,4 @@
 	include_once 'inc/register_sidebars.php';
 	include_once 'inc/carousel.php';
 	include_once 'inc/theme_support.php';
+	include_once 'inc/customizer.php';

@@ -26,13 +26,20 @@
 		<header role="banner">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('sitename');?></a></h1>
+					<?php if ( get_theme_mod('site_logo') ) : ?>
+						<a href="<?php echo esc_url(home_url()); ?>">
+							<img src="<?php echo get_theme_mod('site_logo'); ?>" alt="<?php bloginfo('sitename'); ?>" />
+						</a>
+					<?php else : ?>
+						<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('sitename');?></a></h1>
+					<?php endif; ?>
 				</div>
 				<div class="tagline">
 					<p><?php bloginfo('description'); ?></p>
 				</div>
 		</header>
 		
+		<?php if (!is_page_template('page-landing.php')) : ?>
 		<nav>
 			<div class="container">
 				<?php 
@@ -46,6 +53,6 @@
 				?>
 			</div>
 		</nav>
-		
+		<?php endif; ?>
 		<section class="main-content" role="main">
 			<div class="container">
