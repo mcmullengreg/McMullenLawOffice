@@ -18,8 +18,13 @@
 		        </div>
 		        <div class="contact-info">
 					<!-- Theme Options customizeable -->
-					<a href="tel:(937) 985-2564"><i class="fa fa-phone"></i> (937) 985-2564</a>
-					<a href="#"><i class="fa fa-map-marker"></i> Beavercreek, OH</a>
+					<?php 
+						if (get_theme_mod('phone_number')) : ?>
+							<a href="<?php echo "tel:" . get_theme_mod('phone_number'); ?>"><i class="fa fa-phone"> <?php echo get_theme_mod('phone_number'); ?></i></a>
+					<?php endif;
+						if (get_theme_mod('service_location')) : ?>
+							<?php echo (get_theme_mod('contact_page') ? "<a href='" . get_theme_mod('contact_page') . "'><i class='fa fa-map-marker'></i>" . get_theme_mod('service_location') . "</a>" : "<i class='fa fa-map-marker'></i> "  . get_theme_mod('service_location')); ?>
+					<?php endif; ?>
 				</div>
 	        </div>
         </section>

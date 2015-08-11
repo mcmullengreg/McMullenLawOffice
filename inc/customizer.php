@@ -35,7 +35,7 @@ class MyTheme_Customize {
       	)
       );
       /*
-$wp_customize->add_setting( 'link_textcolor', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
+	  $wp_customize->add_setting( 'link_textcolor', //No need to use a SERIALIZED name, as `theme_mod` settings already live under one db record
          array(
             'default' => '#2BA6CB', //Default setting/value to save
             'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
@@ -70,37 +70,6 @@ $wp_customize->add_setting( 'link_textcolor', //No need to use a SERIALIZED name
 	 	)
       ));
       
-      $wp_customize->add_setting('hero_height', array(
-      	'default' => '350',
-      	'type'	=> 'theme_mod',
-      	'capability' => 'edit_theme_options',
-      	'transport' => 'postMessage',
-      ));
-      
-      $wp_customize->add_control('hero_height', array(
-      	'label'	=> __('Hero image height'),
-      	'section' => 'header_image',
-      	'settings' => 'hero_height',
-      ));
-      
-	 $wp_customize->add_setting('hero_attachment', array(
-	 	'default'        => 'scroll',
-	 	'capability'     => 'edit_theme_options',
-	 	'type'           => 'theme_mod',
-	 	'transport'	=> 'postMessage'
-	 ));
-	 
-	 $wp_customize->add_control( 'hero_attachment', array(
-	    'settings' => 'hero_attachment',
-	    'label'   => __('Hero Image attachment:'),
-	    'section' => 'header_image',
-	    'type'    => 'select',
-	    'choices'    => array(
-	        'scroll' => __('scroll'),
-	        'fixed' => __('fixed'),
-	    ),
-	));
-      
       $wp_customize->add_setting('service_location', array(
       	'default'	=> 'Dayton, OH',
       	'type'	=> 'theme_mod',
@@ -113,6 +82,20 @@ $wp_customize->add_setting( 'link_textcolor', //No need to use a SERIALIZED name
       	'section' => 'title_tagline',
       	'settings' => 'service_location'	
 	 ));
+	 $wp_customize->add_setting('contact_page', array(
+      	'default' => '',
+      	'type'	=> 'theme_mod',
+      	'capability' => 'edit_theme_options',
+      	'transport' => 'postMessage'
+      ));
+      
+      $wp_customize->add_control('contact_page', array(
+      	'label'	=> __('Contact Page'),
+      	'section' => 'title_tagline',
+      	'type'	=> 'dropdown-pages',
+      	'settings' => 'contact_page',
+      ));
+
      $wp_customize->add_setting('phone_number', array(
       	'default'	=> '(555) 555-5555',
       	'type'	=> 'theme_mod',
