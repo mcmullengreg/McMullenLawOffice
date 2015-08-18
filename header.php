@@ -45,7 +45,7 @@
 		</header>
 		
 		<?php if (!is_page_template('page-landing.php')) : ?>
-		<nav>
+		<nav class="main-navigation">
 			<div class="container">
 				<?php 
 					wp_nav_menu(array(
