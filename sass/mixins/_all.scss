@@ -6,9 +6,44 @@
 	display: flex;
 }
 
+@mixin flex-flow($stuff){
+	-webkit-flex-flow: $stuff; // Column wrap for small devices
+	   -moz-flex-flow: $stuff; // Column wrap for small devices
+	    -ms-flex-flow: $stuff; // Column wrap for small devices
+	        flex-flow: $stuff;
+}
+
+@mixin justify-content($stuff){
+	-webkit-justify-content: $stuff;
+	   -moz-justify-content: $stuff;
+	    -ms-justify-content: $stuff;
+	        justify-content: $stuff;
+}
+
+@mixin align-self($stuff){
+	-webkit-align-self: $stuff;
+	   -moz-align-self: $stuff;
+	    -ms-align-self: $stuff;
+	        align-self: $stuff;
+}
+
+@mixin flex-grow($stuff){
+	-webkit-flex-grow: $stuff;
+	   -moz-flex-grow: $stuff;
+	    -ms-flex-grow: $stuff;
+	        flex-grow: $stuff;
+}
+
+@mixin order($stuff){
+	-webkit-order: $stuff;
+	   -moz-order: $stuff;
+	    -ms-order: $stuff;
+	        order: $stuff;
+}
 @mixin transition($transition) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
+	-webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
 }
