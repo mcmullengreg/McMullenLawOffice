@@ -97,7 +97,18 @@ body{
 				display: block;
 			}
 		}	
-	
+		.nav-links{
+			display: block;
+			width:100%;
+			text-align: center;
+			.page-numbers{
+				padding: 0.25rem 0.5rem;
+				&.current{
+					background:$brand-primary;
+					color:#fff;
+				}
+			}
+		}
 	}
 	.sidebar{
 		-webkit-order:2;

@@ -1256,7 +1256,22 @@ body {
   clear: both;
   display: block;
 }
-/* line 102, sass/partials/_content.scss */
+/* line 100, sass/partials/_content.scss */
+.main-content .main .nav-links {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* line 104, sass/partials/_content.scss */
+.main-content .main .nav-links .page-numbers {
+  padding: 0.25rem 0.5rem;
+}
+/* line 106, sass/partials/_content.scss */
+.main-content .main .nav-links .page-numbers.current {
+  background: #79aaaf;
+  color: #fff;
+}
+/* line 113, sass/partials/_content.scss */
 .main-content .sidebar {
   -webkit-order: 2;
   order: 2;
@@ -1268,7 +1283,7 @@ body {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 102, sass/partials/_content.scss */
+  /* line 113, sass/partials/_content.scss */
   .main-content .sidebar {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -1278,7 +1293,7 @@ body {
   }
 }
 @media (min-width: 992px) {
-  /* line 118, sass/partials/_content.scss */
+  /* line 129, sass/partials/_content.scss */
   .main-content .sidebar.landing-page {
     -webkit-flex: 1 30%;
     flex: 1 30%;

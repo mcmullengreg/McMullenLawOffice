@@ -25,8 +25,9 @@
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'mlo' ),
-				'next_text'          => __( 'Next page', 'mlo' ),
+				'prev_text'         => __( '', 'mlo' ),
+				'next_text'         => __( '', 'mlo' ),
+				'mid_size'			=> 5,
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'mlo' ) . ' </span>',
 			) );
 
