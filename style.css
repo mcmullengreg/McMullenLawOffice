@@ -724,9 +724,10 @@ form input[type=submit], form input[type=button] {
   padding: 0.5rem;
   color: #fff;
   text-align: center;
-  -moz-transition: background 250ms ease;
-  -o-transition: background 250ms ease;
   -webkit-transition: background 250ms ease;
+  -moz-transition: background 250ms ease;
+  -ms-transition: background 250ms ease;
+  -o-transition: background 250ms ease;
   transition: background 250ms ease;
 }
 /* line 79, sass/partials/_typography.scss */
@@ -986,44 +987,66 @@ header {
 header .logo {
   margin: 1rem 0;
   -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
   -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
   justify-content: space-around;
   -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
   align-self: center;
 }
 @media (min-width: 992px) {
   /* line 83, sass/partials/_header.scss */
   header .logo {
     -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-align-self: flex-start;
-    align-self: flex-start;
+    -webkit-align-self: flex-start baseline;
+    -moz-align-self: flex-start baseline;
+    -ms-align-self: flex-start baseline;
+    align-self: flex-start baseline;
     -webkit-flex-grow: 2;
+    -moz-flex-grow: 2;
+    -ms-flex-grow: 2;
     flex-grow: 2;
   }
 }
-/* line 100, sass/partials/_header.scss */
+/* line 95, sass/partials/_header.scss */
 header .tagline {
   -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
   -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
   justify-content: space-around;
   -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
   align-self: center;
   padding: 0 1rem;
 }
 @media (min-width: 992px) {
-  /* line 100, sass/partials/_header.scss */
+  /* line 95, sass/partials/_header.scss */
   header .tagline {
     -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
+    -webkit-align-self: flex-end baseline;
+    -moz-align-self: flex-end baseline;
+    -ms-align-self: flex-end baseline;
+    align-self: flex-end baseline;
   }
 }
 
-/* line 117, sass/partials/_header.scss */
+/* line 107, sass/partials/_header.scss */
 .main-navigation {
   -webkit-box-flex: 0;
   -webkit-flex: none;
@@ -1034,12 +1057,12 @@ header .tagline {
   border-bottom: solid 5px #f2f2f2;
 }
 @media (min-width: 992px) {
-  /* line 117, sass/partials/_header.scss */
+  /* line 107, sass/partials/_header.scss */
   .main-navigation {
     border-top: none;
   }
 }
-/* line 128, sass/partials/_header.scss */
+/* line 118, sass/partials/_header.scss */
 .main-navigation .navigation {
   list-style: none;
   margin: 0;
@@ -1056,7 +1079,7 @@ header .tagline {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 128, sass/partials/_header.scss */
+  /* line 118, sass/partials/_header.scss */
   .main-navigation .navigation {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -1065,19 +1088,19 @@ header .tagline {
     justify-content: flex-start;
   }
 }
-/* line 147, sass/partials/_header.scss */
+/* line 137, sass/partials/_header.scss */
 .main-navigation .navigation .current-menu-item a {
   background: #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 147, sass/partials/_header.scss */
+  /* line 137, sass/partials/_header.scss */
   .main-navigation .navigation .current-menu-item a {
     background: transparent;
     color: #79aaaf;
     font-weight: bold;
   }
 }
-/* line 156, sass/partials/_header.scss */
+/* line 146, sass/partials/_header.scss */
 .main-navigation .navigation a {
   color: #666666;
   display: block;
@@ -1087,32 +1110,32 @@ header .tagline {
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  /* line 156, sass/partials/_header.scss */
+  /* line 146, sass/partials/_header.scss */
   .main-navigation .navigation a {
     padding: 0.5rem;
     margin: 0 1rem;
   }
-  /* line 166, sass/partials/_header.scss */
+  /* line 156, sass/partials/_header.scss */
   .main-navigation .navigation a:first-child {
     margin-left: 0;
   }
 }
-/* line 171, sass/partials/_header.scss */
+/* line 161, sass/partials/_header.scss */
 .main-navigation .navigation a:hover {
   color: #79aaaf;
 }
-/* line 177, sass/partials/_header.scss */
+/* line 167, sass/partials/_header.scss */
 .main-navigation .navigation li:not(:last-child) {
   border-bottom: solid 1px #cccccc;
 }
 @media (min-width: 992px) {
-  /* line 177, sass/partials/_header.scss */
+  /* line 167, sass/partials/_header.scss */
   .main-navigation .navigation li:not(:last-child) {
     border: none;
   }
 }
 
-/* line 189, sass/partials/_header.scss */
+/* line 179, sass/partials/_header.scss */
 .landing-page header .logo {
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
@@ -1123,7 +1146,7 @@ header .tagline {
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 200, sass/partials/_header.scss */
+  /* line 190, sass/partials/_header.scss */
   .landing-page .contact .contact-info {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
