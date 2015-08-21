@@ -10,7 +10,8 @@
 			wp_register_script('jquery', get_template_directory_uri() . '/scripts/jquery.min.js', array(), '2.1.4', true);
 			wp_enqueue_script('jquery');
 		}
-		wp_enqueue_script('main', get_template_directory_uri() . '/scripts/main.js', array('jquery'), '2.0', true);
+		wp_enqueue_script('owl', get_template_directory_uri() . '/scripts/owl.carousel.min.js', array('jquery'), '2.0.0-beta', true);
+		wp_enqueue_script('main', get_template_directory_uri() . '/scripts/main.js', array('jquery', 'owl'), '2.0', true);
 		
 	}
 	

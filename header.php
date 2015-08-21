@@ -59,5 +59,18 @@
 			</div>
 		</nav>
 		<?php endif; ?>
+		
+		<?php if ( is_front_page() ) : ?>
+			<section class="feature-content">
+				<div class="container">
+					<div id="owl-demo" class="owl-carousel owl-theme">
+						<div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+						<div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+						<div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+					</div>
+				</div>
+			</section>
+		<?php endif; ?>
+		
 		<section class="main-content" role="main">
 			<div class="container">

@@ -30,6 +30,8 @@ $screen-large: 1200px;
 	-webkit-box-sizing: border-box;
 }
 @import 'partials/header';
+@import 'partials/owl/owl.carousel';
+@import 'partials/owl/owl.theme.default';
 @import 'partials/content';
 @import 'partials/widgets';
 @import 'partials/footer';

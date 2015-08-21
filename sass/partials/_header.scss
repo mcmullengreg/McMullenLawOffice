@@ -200,3 +200,18 @@ header{
 		}	
 	}
 }
+
+.feature-content{
+	background:url(http://mcmullenlaw.com/wp-content/uploads/2014/08/cropped-Cover-Photo.jpg);
+	background-size: cover;
+	
+	padding:40px;
+	
+	.item{
+		img{
+			display: block;
+			width:100%;
+			height:auto;
+		}
+	}
+}
