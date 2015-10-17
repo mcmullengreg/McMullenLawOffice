@@ -9,6 +9,8 @@
 */
 
 get_header(); ?>
+	<?php get_sidebar("page"); ?>
+	
 	<main class="main">
 		<?php
 		// Start the loop.
@@ -27,7 +29,5 @@ get_header(); ?>
 		?>
 		
 	</main>
-	
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
