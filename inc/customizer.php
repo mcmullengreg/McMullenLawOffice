@@ -170,15 +170,15 @@ class MyTheme_Customize {
 
 
 	// Set Custom priority levels
-	$wp_customize->get_section('title_tagline')->priority = 1;
-	$wp_customize->get_section('colors')->priority = 2;
-	$wp_customize->get_section('nav')->priority = 3;
-	$wp_customize->get_section('header_image')->priority = 4;
-	$wp_customize->get_section('footer_options')->priority = 5;
-	$wp_customize->get_section('static_front_page')->priority = 6;
+// 	$wp_customize->get_section('title_tagline')->priority = 1;
+// 	$wp_customize->get_section('colors')->priority = 2;
+//	$wp_customize->get_section('nav')->priority = 3;
+// 	$wp_customize->get_section('header_image')->priority = 4;
+// 	$wp_customize->get_section('footer_options')->priority = 5;
+// 	$wp_customize->get_section('static_front_page')->priority = 6;
 	
 	// Set Custom titles
-	$wp_customize->get_section('header_image')->title = __('Hero Image(s)');
+// 	$wp_customize->get_section('header_image')->title = __('Hero Image(s)');
    }
 
    /**
