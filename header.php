@@ -13,17 +13,17 @@
         <section class="contact">
 	        <div class="container">
 		        <div class="social">
-			        <a href="#" class="facebook" title="Find <?php bloginfo('sitename');?> on Facebook"><i class="fa fa-facebook"></i></a>
-			        <a href="#" class="twitter" title="Find <?php bloginfo('sitename');?> on Twitter"><i class="fa fa-twitter"></i></a>
+			        <a href="#" class="facebook" title="Find <?php bloginfo('sitename');?> on Facebook"><i class="fa fa-facebook" aria-label="<?php echo bloginfo('sitename'); ?> on Facebook"></i></a>
+			        <a href="#" class="twitter" title="Find <?php bloginfo('sitename');?> on Twitter"><i class="fa fa-twitter" aria-label="<?php echo bloginfo('sitename'); ?> on Twitter"></i></a>
 		        </div>
 		        <div class="contact-info">
 					<!-- Theme Options customizeable -->
 					<?php 
 						if (get_theme_mod('phone_number')) : ?>
-							<a href="<?php echo "tel:" . get_theme_mod('phone_number'); ?>"><i class="fa fa-phone"> <?php echo get_theme_mod('phone_number'); ?></i></a>
+							<a href="<?php echo "tel:" . get_theme_mod('phone_number'); ?>"><i class="fa fa-phone" aria-label="phone"> </i><?php echo get_theme_mod('phone_number'); ?></a>
 					<?php endif;
 						if (get_theme_mod('service_location')) : ?>
-							<?php echo (get_theme_mod('contact_page') ? "<a href='" . get_theme_mod('contact_page') . "'><i class='fa fa-map-marker'></i>" . get_theme_mod('service_location') . "</a>" : "<i class='fa fa-map-marker'></i> "  . get_theme_mod('service_location')); ?>
+							<?php echo (get_theme_mod('contact_page') ? "<a href='" . get_theme_mod('contact_page') . "'><i class='fa fa-map-marker' aria-label='location'></i>" . get_theme_mod('service_location') . "</a>" : "<i class='fa fa-map-marker' aria-label='location'></i> "  . get_theme_mod('service_location')); ?>
 					<?php endif; ?>
 				</div>
 	        </div>
@@ -59,24 +59,19 @@
 			</div>
 		</nav>
 		<?php endif; ?>
-		
-		<?php if ( is_front_page() ) : ?>
-			<section class="feature-content">
-				<div class="container">
-					<div id="owl-demo" class="owl-carousel owl-theme">
+		<?php if (get_header_image() != '' ) : ?>
+			<section class="<?php echo (is_front_page() ? 'homepage-feature' : 'header-image'); ?>" style="background-image: url(<?php header_image(); ?>)">
+				<?php if (is_front_page()) : ?>
+					<div class="container">
 						<div class="item">
-							<p>Alcohol offenses</p>
+							<h1>I am the first item</h1>
 						</div>
 						<div class="item">
-							<p>Alcohol offenses</p>
-						</div>
-						<div class="item">
-							<p>Alcohol offenses</p>
+							<h1>I am the second item</h1>
 						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 			</section>
 		<?php endif; ?>
-		
 		<section class="main-content" role="main">
 			<div class="container">
