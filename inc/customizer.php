@@ -31,7 +31,7 @@ class MyTheme_Customize {
       	array(
       		'title' => __( 'Analytics Code' ),
       		'capability' => 'edit_theme_options',
-      		'description' => __('Google Tag Manager Identifier. GTM-XXXXXX'),
+      		'description' => __('Google Tag Manager or Google Analytics Identifier'),
       	)
       );
       /*
