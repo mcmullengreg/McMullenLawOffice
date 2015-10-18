@@ -32,7 +32,18 @@
 		<!-- this will be imported in wp_footer() --->
 
 		<!--- Google GTM/Analytics will be added via theme option --->
+		<?php if (get_theme_mod(analytics_code) && substr(get_theme_mod(analytics_code), 0, 2) === 'UA-') : ?>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
+		  ga('create', '<?php echo get_theme_mod(analytics_code) ?>', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+		<?php endif; ?>
 		<?php wp_footer(); ?>
     </body>
 </html>
