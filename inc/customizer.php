@@ -71,7 +71,7 @@ class MyTheme_Customize {
       ));
       
       $wp_customize->add_setting('service_location', array(
-      	'default'	=> 'Dayton, OH',
+      	'default'	=> 'Anywhere, USA',
       	'type'	=> 'theme_mod',
       	'capability'	=> 'edit_theme_options',
 	 	'transport'	=> 'postMessage',
