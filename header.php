@@ -24,8 +24,23 @@
         <section class="contact">
 	        <div class="container">
 		        <div class="social">
-			        <a href="#" class="facebook" title="Find <?php bloginfo('sitename');?> on Facebook"><i class="fa fa-facebook" aria-label="<?php echo bloginfo('sitename'); ?> on Facebook"></i></a>
-			        <a href="#" class="twitter" title="Find <?php bloginfo('sitename');?> on Twitter"><i class="fa fa-twitter" aria-label="<?php echo bloginfo('sitename'); ?> on Twitter"></i></a>
+			        <?php 
+				        if ( has_nav_menu( 'social' ) ) {
+							// User has assigned menu to this location;
+							// output it
+							$socialMenu = array(
+					        	'theme-location'	=> 'social',
+					        	'menu'				=> 'social',
+					        	'echo'				=> false,
+					        	'fallback_cb'		=> 'false',
+					        	'items_wrap'		=> '%3$s',
+					        	'link_before'		=> '<span class="sr-only">',
+					        	'link_after'		=> '</span>'
+							);
+							
+							echo strip_tags(wp_nav_menu( $socialMenu ), '<a><span>' );
+						}
+			        ?>
 		        </div>
 		        <div class="contact-info">
 					<!-- Theme Options customizeable -->
