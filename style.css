@@ -1139,7 +1139,7 @@ header .tagline {
 .homepage-feature {
   display: block;
   width: 100%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center center;
   padding: 100px 0 20px;
