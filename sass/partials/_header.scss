@@ -25,18 +25,30 @@
 			display: inline-block;
 			padding:1rem;
 			color:white;
+			font-family: 'FontAwesome';
 			.fa{
 				height: 15px;
 				width: 15px;
 				color:white;
 			}
-			&.facebook:hover{
-				color:white;
-				background: #3B5998;
+			
+			&[href*='facebook']{
+				&:hover, &:focus{
+					color:white;
+					background:#385998;
+				}
+				&:before{
+					content: '\f09a';
+				}
 			}
-			&.twitter:hover{
-				color:white;
-				background:#55acee;
+			&[href*='twitter']{
+				&:hover, &:focus{
+					color:white;
+					background:#55acee;
+				}
+				&:before{
+					content: '\f099';
+				}
 			}
 		}
 	}
