@@ -25,7 +25,23 @@
 					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('sitename'); ?></p>
 				</div>
 				<div class="privacy">
-					<p>This site is an advertisement. &bull; <a href="#">Privacy Policy</a> &bull; <a href="#">Disclaimer</a></p>
+					<p>
+					<?php 
+						if (get_theme_mod(advertisement_disclaimer)){
+							echo get_theme_mod(advertisement_disclaimer); 
+						} if (get_theme_mod('site_disclaimer_page')) : ?>
+							&bull;
+							<a href="<?php echo get_permalink(get_theme_mod('site_disclaimer_page')); ?>">
+							<?php if (get_theme_mod('site_disclaimer_text')) {
+								echo get_theme_mod('site_disclaimer_text');
+							} else {
+								echo get_the_title(get_theme_mod('site_disclaimer_page'));
+							} ?>
+							</a>
+					<?php 
+						endif; 
+					?>
+					</p>
 				</div>
 			</div>
 		</section>
