@@ -122,14 +122,14 @@ class MyTheme_Customize {
       ));
       
       $wp_customize->add_setting('site_disclaimer_text', array(
-      	'default' => 'Default: Page Title',
+      	'default' => '',
       	'type'	=> 'theme_mod',
       	'capability' => 'edit_theme_options',
       	'transport' => 'postMessage'
       ));
       
       $wp_customize->add_control('site_disclaimer_text', array(
-      	'label'	=> __('Site Disclaimer/Privacy Policy Text'),
+      	'label'	=> __('Privacy Police Name'),
       	'section' => 'footer_options',
       	'settings' => 'site_disclaimer_text',
       ));
