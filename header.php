@@ -65,39 +65,24 @@
 						<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('sitename');?></a></h1>
 					<?php endif; ?>
 				</div>
-				<div class="tagline">
-					<p><?php bloginfo('description'); ?></p>
-				</div>
+				<?php if (!is_page_template('page-landing.php')) : ?>
+					<nav role="navigation">
+						<?php 
+							wp_nav_menu(array(
+								'theme-location'	=> 'main-navigation',
+								'container'			=> false,
+								'fallback_cb'		=> false,
+								'menu_class'		=> 'navigation',
+								'menu_id'			=> 'main-navigation',
+							));
+						?>
+					</nav>
+				<?php endif; ?>
+			</div>
 		</header>
 		
-		<?php if (!is_page_template('page-landing.php')) : ?>
-		<nav class="main-navigation">
-			<div class="container">
-				<?php 
-					wp_nav_menu(array(
-						'theme-location'	=> 'main-navigation',
-						'container'			=> false,
-						'fallback_cb'		=> false,
-						'menu_class'		=> 'navigation',
-						'menu_id'			=> 'main-navigation',
-					));
-				?>
-			</div>
-		</nav>
-		<?php endif; ?>
-		<?php if (get_header_image() != '' ) : ?>
-			<section class="<?php echo (is_front_page() ? 'homepage-feature' : 'header-image'); ?>" style="background-image: url(<?php header_image(); ?>)">
-				<?php if (is_front_page()) : ?>
-					<div class="container">
-						<div class="item">
-							<h1>I am the first item</h1>
-						</div>
-						<div class="item">
-							<h1>I am the second item</h1>
-						</div>
-					</div>
-				<?php endif; ?>
-			</section>
-		<?php endif; ?>
-		<section class="main-content" role="main">
+		<section class="feature-image" style="background-url(<?php header_image(); ?>); height:<?php echo get_custom_header()->height; ?> width:<?php echo get_custom_header()->width; ?>">
+		</section>
+		<img src="<?php header_image(); ?>" class="feature-image" />
+		<section class="main-content">
 			<div class="container">
