@@ -244,7 +244,11 @@ header{
 
 // Feature Image 
 .feature-image{
+	display: none;
 	
+	@media (min-width: $screen-medium){
+		display: block;
+	}
 }
 .homepage-feature{
 	display: block;

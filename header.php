@@ -46,10 +46,17 @@
 					<!-- Theme Options customizeable -->
 					<?php 
 						if (get_theme_mod('phone_number')) : ?>
-							<a href="<?php echo "tel:" . get_theme_mod('phone_number'); ?>"><i class="fa fa-phone" aria-label="phone"> </i><?php echo get_theme_mod('phone_number'); ?></a>
+							<?php if (wp_is_mobile() ) : ?>
+								<a href="<?php echo "tel:" . get_theme_mod('phone_number'); ?>"><i class="fa fa-phone" aria-label="phone"> </i><?php echo get_theme_mod('phone_number'); ?></a>
+							<?php else: ?>
+							
+								<a href="<?php echo ( get_theme_mod('contact_page' ) ) ? get_permalink(get_theme_mod('contact_page')) : "#" ?>">
+									<i class="fa fa-phone" aria-label="phone"> </i><?php echo get_theme_mod('phone_number'); ?>
+								</a>
+							<?php endif; ?>
 					<?php endif;
 						if (get_theme_mod('service_location')) : ?>
-							<?php echo (get_theme_mod('contact_page') ? "<a href='" . get_theme_mod('contact_page') . "'><i class='fa fa-map-marker' aria-label='location'></i>" . get_theme_mod('service_location') . "</a>" : "<i class='fa fa-map-marker' aria-label='location'></i> "  . get_theme_mod('service_location')); ?>
+							<?php echo (get_theme_mod('contact_page') ) ? "<a href='" . get_permalink(get_theme_mod('contact_page')) . "'><i class='fa fa-map-marker' aria-label='location'></i>" . get_theme_mod('service_location') . "</a>" : "<i class='fa fa-map-marker' aria-label='location'></i> "  . get_theme_mod('service_location'); ?>
 					<?php endif; ?>
 				</div>
 	        </div>

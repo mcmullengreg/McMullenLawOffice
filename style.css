@@ -1197,7 +1197,18 @@ header nav ul li:not(:last-child) {
 	}
 }
 */
-/* line 249, sass/partials/_header.scss */
+/* line 246, sass/partials/_header.scss */
+.feature-image {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 246, sass/partials/_header.scss */
+  .feature-image {
+    display: block;
+  }
+}
+
+/* line 253, sass/partials/_header.scss */
 .homepage-feature {
   display: block;
   width: 100%;
@@ -1206,7 +1217,7 @@ header nav ul li:not(:last-child) {
   background-position: center center;
   padding: 100px 0 20px;
 }
-/* line 257, sass/partials/_header.scss */
+/* line 261, sass/partials/_header.scss */
 .homepage-feature .item {
   background: rgba(255, 255, 255, 0.75);
   width: 100%;
@@ -1221,7 +1232,7 @@ header nav ul li:not(:last-child) {
   justify-content: space-around;
 }
 @media (min-width: 992px) {
-  /* line 257, sass/partials/_header.scss */
+  /* line 261, sass/partials/_header.scss */
   .homepage-feature .item {
     -webkit-flex-flow: row wrap;
     -moz-flex-flow: row wrap;
@@ -1233,17 +1244,17 @@ header nav ul li:not(:last-child) {
     align-self: flex-start baseline;
     margin: 1.5rem;
   }
-  /* line 267, sass/partials/_header.scss */
+  /* line 271, sass/partials/_header.scss */
   .homepage-feature .item:first-child {
     margin-left: 0;
   }
-  /* line 270, sass/partials/_header.scss */
+  /* line 274, sass/partials/_header.scss */
   .homepage-feature .item:last-child {
     margin-right: 0;
   }
 }
 
-/* line 277, sass/partials/_header.scss */
+/* line 281, sass/partials/_header.scss */
 .header-image {
   display: block;
   width: 100%;
@@ -1253,7 +1264,7 @@ header nav ul li:not(:last-child) {
   height: 200px;
 }
 
-/* line 288, sass/partials/_header.scss */
+/* line 292, sass/partials/_header.scss */
 .landing-page header .logo {
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
@@ -1264,7 +1275,7 @@ header nav ul li:not(:last-child) {
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 299, sass/partials/_header.scss */
+  /* line 303, sass/partials/_header.scss */
   .landing-page .contact .contact-info {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
