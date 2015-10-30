@@ -1,3 +1,3 @@
 <aside class="sidebar">
-	<?php dynamic_sidebar('global'); ?>
+	<?php dynamic_sidebar('blog'); ?>
 </aside>
