@@ -6,6 +6,9 @@ body > footer{
 	background:#252525;
 	color:#fff;
 	padding: 1rem 2rem;
+	.container{
+		flex-wrap: wrap;
+	}
 	.item{
 		-webkit-flex-flow: column wrap; // Column wrap for small devices
 		flex-flow:column wrap;
@@ -14,9 +17,10 @@ body > footer{
 		@media (min-width:$screen-medium){
 			-webkit-flex-flow: row wrap; // Column wrap for small devices
 			flex-flow:row wrap;
+			flex-basis: 25%;
+			padding:0 20px
 		}
 	}
-	
 }
 
 .colophon{
